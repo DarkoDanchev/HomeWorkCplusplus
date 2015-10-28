@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1446055608 source:d:\domasno\loop_tasks_darko_danchev\main.cpp
+	<iostream>
+	<cmath>
+	<stdlib.h>
+
