@@ -311,6 +311,7 @@ int main()
         break;
     case 3:
         int numberDigits,digit;
+        digits=0;
         cout<<"Enter the number you want to separate: ";
         cin>>numberDigits;
         cout<<"\n";
@@ -333,14 +334,49 @@ int main()
         cout<<"Enter the number: ";
         cin>>pNumber;
         cout<<"\n";
+        do{
         cout<<"Enter the type of number system you want to change the number: ";
         cin>>pType;
+        if(pType == 16 || pType ==8 || pType == 2) break;
+        }
+        while(pType != 16 || pType !=8 || pType != 2);
         cout<<"\n";
+        if(pType > 16){
+          cout<<"Wrong input!!! Number system can't be bigger than 16";
+            }
+
         while(pNumber != 0){
             transformedNumber = pNumber % pType;
             pNumber /= pType;
            // transformedNumber = pNumber;
-            cout<<transformedNumber<< " ";
+           switch(transformedNumber){
+           case 10:
+               cout<<"a"<< " ";
+             break;
+           case 11:
+               cout<<"b"<< " ";
+             break;
+           case 12:
+               cout<<"c"<< " ";
+             break;
+           case 13:
+               cout<<"d"<< " ";
+             break;
+           case 14:
+               cout<<"e"<< " ";
+             break;
+           case 15:
+               cout<<"f"<< " ";
+             break;
+           case 16:
+               cout<<"g"<< " ";
+             break;
+           default:
+               cout<<transformedNumber<< " ";
+            break;
+           }
+
+
 
 
 
