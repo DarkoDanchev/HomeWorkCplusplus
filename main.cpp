@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include <stdlib.h>
+#include <cstdlib>
 
 using namespace std;
 //global menu variables
